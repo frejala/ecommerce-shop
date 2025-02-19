@@ -91,7 +91,7 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
   --font-poppins: "Poppins", sans-serif;
-  --background-image-hero: url("./img/bg_hero.svg");
+  --background-image-hero: url("./img/hero.jpg");
 }
 
 @layer base {
