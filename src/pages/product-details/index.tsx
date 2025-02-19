@@ -1,20 +1,29 @@
-import { PRODUCTS } from "@/constants";
 import { useParams } from "react-router";
 
 import { useDispatch } from "react-redux";
 import { add } from "@/store/slices/cart-slice";
+import { useAppSelector } from "@/store/redux-hooks";
 
 export default function ProductDetails() {
   const { id } = useParams();
 
   const dispatch = useDispatch();
+  const productsQuery = useAppSelector((state) => state.products);
+
+  if (productsQuery.loading) {
+    return (
+      <section className="h-screen flex justify-center items-center">
+        Loading...
+      </section>
+    );
+  }
+  const products = productsQuery.products;
+  const product = products.find((product) => product.id === Number(id));
 
   const handleAddToCart = () => {
     console.log("Adding to cart product", product);
     dispatch(add(product));
   };
-
-  const product = PRODUCTS.find((product) => product.id === Number(id));
 
   if (!product) {
     return (
