@@ -32,14 +32,6 @@ You can see a live demo of this project
   designs.
 - **Redux**: A JavaScript library for managing application state.
 
-## Screenshots
-
-Below are some screenshots of the website.
-
-![Home Page](/src/img/home-page.png)
-
-![Cart/Sidebar](/src/img/cart.png)
-
 ## Installation and Setup
 
 1. Clone the repository to your local machine.
