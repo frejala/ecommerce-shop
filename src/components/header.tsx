@@ -32,7 +32,7 @@ export function Header() {
     <header
       className={cn(
         isActive ? "bg-white py-4 shadow-md" : "bg-none py-6",
-        "fixed w-full z-10 transition-all"
+        "fixed w-full z-10 transition-all px-8"
       )}
     >
       <div className="container mx-auto flex items-center justify-between h-full">
