@@ -5,7 +5,7 @@ export function Hero() {
     <section className="h-200 bg-hero bg-no-repeat bg-cover bg-center py-24">
       <div className="container mx-auto flex justify-around h-full">
         <div className="container mx-auto flex justify-around h-full">
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center px-5">
             <div className="font-semibold flex items-center uppercase">
               <div className="w-10 h-0.5 bg-red-500 mr-3"></div>New Trend
             </div>
